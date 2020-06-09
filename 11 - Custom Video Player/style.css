@@ -85,6 +85,12 @@ body {
 .player__controls > * {
   flex: 1;
 }
+.fullscreen_toggle {
+  /* added to make fullscreen button match other inputs */
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
 
 .progress {
   flex: 10;
@@ -94,7 +100,7 @@ body {
   height: 5px;
   transition: height 0.3s;
   background: rgba(0,0,0,0.5);
-  cursor: ew-resize;
+  cursor: pointer;
 }
 
 .progress__filled {
