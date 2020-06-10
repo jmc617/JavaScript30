@@ -20,8 +20,8 @@ function togglePlay() {
     // }
 }
 
-function updateButton(){
-    const icon = this.paused ? '►' : '❚ ❚';
+function updateButton(){   
+    const icon = this.paused ? '►' : '❚ ❚';  
     toggle.textContent = icon;
 }
 function skip() {
@@ -55,6 +55,7 @@ function toggleFullscreen () {
 // Add event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click', skip));
